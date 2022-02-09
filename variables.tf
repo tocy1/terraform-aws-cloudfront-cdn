@@ -315,9 +315,9 @@ variable "ordered_cache" {
 #     default_ttl            = number
 #     max_ttl                = number
 
-#     forward_query_string  = bool
-#     forward_header_values = list(string)
-#     forward_cookies       = string
+    forward_query_string  = bool
+    forward_header_values = list(string)
+    forward_cookies       = string
 
 #     lambda_function_association = list(object({
 #       event_type   = string
