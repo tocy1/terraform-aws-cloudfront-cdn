@@ -208,7 +208,7 @@ resource "aws_cloudfront_distribution" "default" {
 #         }
       }
 
-#       viewer_protocol_policy = ordered_cache_behavior.value.viewer_protocol_policy
+      viewer_protocol_policy = ordered_cache_behavior.value.viewer_protocol_policy
 #       default_ttl            = ordered_cache_behavior.value.default_ttl
 #       min_ttl                = ordered_cache_behavior.value.min_ttl
 #       max_ttl                = ordered_cache_behavior.value.max_ttl
