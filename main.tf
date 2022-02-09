@@ -191,6 +191,7 @@ resource "aws_cloudfront_distribution" "default" {
       cached_methods           = ordered_cache_behavior.value.cached_methods
       cache_policy_id          = ordered_cache_behavior.value.cache_policy_id
       #origin_request_policy_id = ordered_cache_behavior.value.origin_request_policy_id
+      viewer_protocol_policy = ordered_cache_behavior.value.viewer_protocol_policy
       target_origin_id         = ordered_cache_behavior.value.target_origin_id == "" ? module.this.id : ordered_cache_behavior.value.target_origin_id
 #       compress                 = ordered_cache_behavior.value.compress
 #       trusted_signers          = var.trusted_signers
@@ -208,7 +209,7 @@ resource "aws_cloudfront_distribution" "default" {
 #         }
       }
 
-      viewer_protocol_policy = ordered_cache_behavior.value.viewer_protocol_policy
+      
 #       default_ttl            = ordered_cache_behavior.value.default_ttl
 #       min_ttl                = ordered_cache_behavior.value.min_ttl
 #       max_ttl                = ordered_cache_behavior.value.max_ttl
