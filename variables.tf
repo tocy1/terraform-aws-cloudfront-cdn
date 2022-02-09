@@ -306,29 +306,29 @@ variable "ordered_cache" {
 
     allowed_methods          = list(string)
     cached_methods           = list(string)
-    cache_policy_id          = string
-    origin_request_policy_id = string
-    compress                 = bool
+#     cache_policy_id          = string
+#     origin_request_policy_id = string
+#     compress                 = bool
 
-    viewer_protocol_policy = string
-    min_ttl                = number
-    default_ttl            = number
-    max_ttl                = number
+#     viewer_protocol_policy = string
+#     min_ttl                = number
+#     default_ttl            = number
+#     max_ttl                = number
 
-    forward_query_string  = bool
-    forward_header_values = list(string)
-    forward_cookies       = string
+#     forward_query_string  = bool
+#     forward_header_values = list(string)
+#     forward_cookies       = string
 
-    lambda_function_association = list(object({
-      event_type   = string
-      include_body = bool
-      lambda_arn   = string
-    }))
+#     lambda_function_association = list(object({
+#       event_type   = string
+#       include_body = bool
+#       lambda_arn   = string
+#     }))
 
-    function_association = list(object({
-      event_type   = string
-      function_arn = string
-    }))
+#     function_association = list(object({
+#       event_type   = string
+#       function_arn = string
+#     }))
   }))
   default     = []
   description = <<DESCRIPTION
