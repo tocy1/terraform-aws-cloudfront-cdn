@@ -306,11 +306,11 @@ variable "ordered_cache" {
 
     allowed_methods          = list(string)
     cached_methods           = list(string)
-#     cache_policy_id          = string
+    cache_policy_id          = string
 #     origin_request_policy_id = string
 #     compress                 = bool
 
-#     viewer_protocol_policy = string
+    viewer_protocol_policy = string
 #     min_ttl                = number
 #     default_ttl            = number
 #     max_ttl                = number
