@@ -230,7 +230,7 @@ resource "aws_cloudfront_distribution" "default" {
 #           function_arn = function_association.value.function_arn
 #         }
 #       }
-#     }
+     }
   }
 
   web_acl_id = var.web_acl_id
